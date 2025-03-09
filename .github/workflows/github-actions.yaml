@@ -19,6 +19,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
       - run: sam build --use-container
-        working-directory: whatsapp-webhook
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset
-        working-directory: whatsapp-webhook
